@@ -14,7 +14,7 @@ exploratorio de tus datos de manera rápida y sencilla. Para comenzar, sube tu a
 uploaded_file = st.file_uploader("Subir Archivo Excel", type=["xlsx"])
 
 if uploaded_file is not None:
-    df = pd.read_excel(uploaded_file)
+    df = pd.read_excel(uploaded_file, engine="openpyxl")
     st.write("1. Exploración inicial de los datos")
     st.write(df.head())
 
