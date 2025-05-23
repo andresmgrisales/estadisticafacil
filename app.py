@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import openpyxl, sys
+print("### openpyxl version:", openpyxl.__version__, file=sys.stderr)
 
 # Función para convertir tipos de datos a tipos compatibles con Arrow
 def convert_types(df):
